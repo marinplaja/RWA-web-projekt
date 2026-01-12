@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prijava</title>
+    <meta charset="UTF-8" />
+    <link href="/css/stil.css" rel="stylesheet" type="text/css" />
+    <script src="/js/funkcije.js"></script>
+    <script src="/js/prijava.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Prijava</h1>
+        <div id="headerUserInfo" style="display: flex; align-items: center; gap: 1rem;">
+            <span id="userInfo" style="color: white; font-size: 0.9rem;"></span>
+            <button id="logoutBtn" class="logout-gumb" onclick="window.location.href='/odjava'" style="display:none;">Odjava</button>
+        </div>
+    </header>
+    <nav>#navigacija#</nav>
+    <main>
+        <div id="poruka"></div>
+        <form id="prijavaForma">
+            <label for="korime">Korisničko ime</label>
+            <input name="korime" type="text" required />
+            <label for="lozinka">Lozinka</label>
+            <input name="lozinka" type="password" required />
+            <input type="submit" value="Prijavi se" />
+        </form>
+    </main>
+</body>
+</html>

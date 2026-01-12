@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokumentacija - Web aplikacija za evidenciju odgledanih TV serija</title>
+    <link href="/css/stil.css" rel="stylesheet" type="text/css" />
+    <script src="/js/funkcije.js"></script>
+</head>
+<body onload="provjeriPrijavu()">
+    <header>
+        <h1>Dokumentacija Web Aplikacije</h1>
+        <div id="headerUserInfo" style="display: flex; align-items: center; gap: 1rem;">
+            <span id="userInfo" style="color: white; font-size: 0.9rem;"></span>
+            <button id="logoutBtn" class="logout-gumb" onclick="window.location.href='/odjava'" style="display:none;">Odjava</button>
+        </div>
+    </header>
+    <nav>#navigacija#</nav>
+    <main>
+    <div class="autor-info">
+        <h2>Autor</h2>
+        <div style="display: flex; align-items: center; gap: 2rem;">
+            <img src="/slike/marin.jpg" alt="Slika autora" onerror="this.style.display='none';">
+            <div>
+                <p><strong>Ime:</strong> Marin Miko</p>
+                <p><strong>Prezime:</strong> Plastić</p>
+                <p><strong>FOI e-mail:</strong> mplastic21@student.foi.hr</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="era-model">
+        <h2>ERA Model Baze Podataka</h2>
+        <div style="text-align: center; margin: 1rem 0;">
+            <a href="/slike/era_model.png" target="_blank">
+                <img src="/slike/era_model.png" alt="ERA Model Baze Podataka" id="eraSlika" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+            </a>
+            <p style="margin-top: 1rem; color: #7f8c8d;">Kliknite na sliku za prikaz u punoj veličini</p>
+        </div>
+    </div>
+
+    <div class="dokumentacija-sekcija">
+        <h2>Tablica 1. Pregled funkcionalnosti Web aplikacije</h2>
+        <div style="overflow-x: auto;">
+        <table>
+            <thead>
+                <tr>
+                    <th>Uloga</th>
+                    <th>Stranica</th>
+                    <th>Točka</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="6">Gost</td>
+                    <td>/info</td>
+                    <td>a</td>
+                    <td class="napravljeno">Napravljeno</td>
+                </tr>
+                <tr>
+                    <td rowspan="4">/</td>
+                    <td>a</td>
+                    <td class="napravljeno">Napravljeno</td>
+                </tr>
+                <tr>
+                    <td>b</td>
+                    <td class="napravljeno">Napravljeno</td>
+                </tr>
+                <tr>
+                    <td>c</td>
+                    <td class="napravljeno">Napravljeno</td>
+                </tr>
+                <tr>
+                    <td>d</td>
+                    <td class="napravljeno">Napravljeno</td>
+                </tr>
+                <tr>
+                    <td>/reg</td>
+                    <td>a</td>
+                    <td class="napravljeno">Napravljeno</td>
+                </tr>
+                <tr>
+                    <td rowspan="9">Korisnik</td>
+                    <td>/prijava</td>
+                    <td>a</td>
+                    <td class="napravljeno">Napravljeno</td>
+                </tr>
+                <tr>
+                    <td>/odjava</td>
+                    <td>a</td>
+                    <td class="napravljeno">Napravljeno</td>
+                </tr>
+                <tr>
+                    <td rowspan="4">/detalji</td>
+                    <td>a</td>
+                    <td class="napravljeno">Napravljeno</td>
+                </tr>
+                <tr>
+                    <td>b</td>
+                    <td class="napravljeno">Napravljeno</td>
+                </tr>
+                <tr>
+                    <td>c</td>
+                    <td class="napravljeno">Napravljeno</td>
+                </tr>
+                <tr>
+                    <td>d</td>
+                    <td class="napravljeno">Napravljeno</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">/gledano</td>
+                    <td>a</td>
+                    <td class="napravljeno">Napravljeno</td>
+                </tr>
+                <tr>
+                    <td>b</td>
+                    <td class="napravljeno">Napravljeno</td>
+                </tr>
+                <tr>
+                    <td>c</td>
+                    <td class="napravljeno">Napravljeno</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Admin</td>
+                    <td rowspan="3">/korisnici</td>
+                    <td>a</td>
+                    <td class="napravljeno">Napravljeno</td>
+                </tr>
+                <tr>
+                    <td>b</td>
+                    <td class="napravljeno">Napravljeno</td>
+                </tr>
+                <tr>
+                    <td>c</td>
+                    <td class="napravljeno">Napravljeno</td>
+                </tr>
+                <tr>
+                    <td rowspan="5">Sve</td>
+                    <td rowspan="5">Sve</td>
+                    <td>a</td>
+                    <td class="napravljeno">Napravljeno</td>
+                </tr>
+                <tr>
+                    <td>b</td>
+                    <td class="napravljeno">Napravljeno</td>
+                </tr>
+                <tr>
+                    <td>c</td>
+                    <td class="napravljeno">Napravljeno</td>
+                </tr>
+                <tr>
+                    <td>d</td>
+                    <td class="napravljeno">Napravljeno</td>
+                </tr>
+                <tr>
+                    <td>e</td>
+                    <td class="napravljeno">Napravljeno</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
+
+    <div class="dokumentacija-sekcija">
+        <h2>Tablica 2. Pregled resursa, metoda i parametara REST servisa</h2>
+        <div style="overflow-x: auto;">
+        <table>
+            <thead>
+                <tr>
+                    <th>Resurs {parametri}</th>
+                    <th>GET čitanje (statusni kod)</th>
+                    <th>POST kreiranje (statusni kod)</th>
+                    <th>PUT ažuriranje (statusni kod)</th>
+                    <th>DELETE brisanje (statusni kod)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>/rest/korisnici</td>
+                    <td class="napravljeno">Napravljeno</td>
+                    <td class="napravljeno">Napravljeno</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>/rest/korisnici/{korime}</td>
+                    <td class="napravljeno">Napravljeno</td>
+                    <td></td>
+                    <td class="napravljeno">Napravljeno</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>/rest/korisnici/{korime}/prijava</td>
+                    <td></td>
+                    <td class="napravljeno">Napravljeno</td>
+                    <td class="napravljeno">Napravljeno</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>/rest/serije</td>
+                    <td class="napravljeno">Napravljeno</td>
+                    <td class="napravljeno">Napravljeno</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>/rest/serije/{id}</td>
+                    <td class="napravljeno">Napravljeno</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>/rest/serije/{id}/odgledano</td>
+                    <td class="napravljeno">Napravljeno</td>
+                    <td class="napravljeno">Napravljeno</td>
+                    <td></td>
+                    <td class="napravljeno">Napravljeno</td>
+                </tr>
+            </tbody>
+        </table>
+
+    <div class="dodatne-info dokumentacija-sekcija">
+        <h3>Dodatne informacije</h3> 
+        
+        <h4>Dodatne putanje:</h4>
+        <ul>
+            <li><strong>/rest/korisnici/me</strong> - GET metoda za dohvaćanje podataka trenutno prijavljenog korisnika - Napravljeno</li>
+            <li><strong>/rest/korisnici/{korime}/status</strong> - PUT metoda za ažuriranje statusa korisnika (zaključavanje/otključavanje) - Napravljeno (samo admin)</li>
+            <li><strong>/rest/tmdb/zanr</strong> - GET metoda za dohvaćanje žanrova iz TMDB servisa - Napravljeno</li>
+            <li><strong>/rest/tmdb/serije</strong> - GET metoda za pretraživanje TV serija u TMDB servisu - Napravljeno</li>
+            <li><strong>/rest/tmdb/serije/{id}</strong> - GET metoda za dohvaćanje detalja serije iz TMDB servisa - Napravljeno</li>
+            <li><strong>/rest/serije/{id}/detalji</strong> - GET metoda za dohvaćanje detalja serije iz TMDB servisa (alternativna putanja) - Napravljeno</li>
+            <li><strong>/rest/statistika</strong> - GET metoda za dohvaćanje statistike korištenja sustava - Napravljeno (samo admin)</li>
+        </ul>
+
+    </div>
+    </main>
+    <footer></footer>
+</body>
+</html>
+
